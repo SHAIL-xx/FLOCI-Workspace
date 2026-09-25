@@ -1,0 +1,28 @@
+# Python / Virtualenv
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.env
+.env*
+!.env.example
+
+# Floci & Mock Cloud runtime
+.floci/
+floci_data/
+*.log
+
+# Docker / Volum state 
+volume/
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,13 @@
+services:
+  floci:
+    container_name: floci_mock_cloud
+    image: floci/floci:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4566:4566"
+    environment:
+      - FLOCI_PORT=4566
+      - AWS_DEFAULT_REGION=ap-south-1
+      - FLOCI_DATA_DIR=/data
+    volumes:
+      - ./data:/data
